@@ -48,5 +48,15 @@ select * from Candidate_Qualification;
 
 --inserting Candidate_Qualification
 insert into Candidate_Qualification
-values ()
-
+values ('5', 'google cloud', 'BE', 'yes', 'Good', 'yes', '2020', 'yes', '2020', 'yes', 'IIT', 'yes', '48', 'yes', 'none', 'no', 'creatorstamp6', 'creatoruser6'),
+       ('6', 'AWS ', 'BE', 'yes', 'nice', 'yes', '2019', 'yes', '2019', 'yes', 'IIIT', 'yes', '48', 'yes', 'none', 'no', 'creatorstamp7', 'creatoruser7'),
+	   ('7', 'PMP', 'BE', 'yes', 'execellent', 'yes', '2018', 'yes', '2018', 'yes', 'JECRC', 'yes', '48', 'yes', 'none', 'no', 'creatorstamp8', 'creatoruser8'),
+	   ('8', 'CISM', 'BE', 'yes', 'Good', 'yes', '2017', 'yes', '2017', 'yes', 'SHRI RAM', 'yes', '48', 'yes', 'none', 'no', 'creatorstamp9', 'creatoruser9');
+	  
+--selecting candidate_education_detail_check
+select * from candidate_education_detail_check;
+insert into candidate_education_detail_check
+values ('5', 'frontend developer', 'yes', 'done', 'done' , 'creatorstamp6', 'creatoruser6'),
+       ('6', 'Backend developer', 'yes', 'done', 'done' , 'creatorstamp7', 'creatoruser7'),
+	   ('7', 'fullstack developer', 'yes', 'done', 'done' , 'creatorstamp8', 'creatoruser8'),
+	   ('8', 'frontend developer', 'yes', 'done', 'done' , 'creatorstamp9', 'creatoruser9');
