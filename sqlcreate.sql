@@ -294,3 +294,20 @@ create table lab_threshold(
 	creator_user varchar(120)
 	);
 
+--creatind table tblEmployee
+CREATE TABLE tblEmployee
+(
+  Id int Primary Key,
+  Name nvarchar(30),
+  Salary int,
+  Gender nvarchar(10),
+  DepartmentId int
+);
+
+-- creating tblEmployeeAudit table
+CREATE TABLE tblEmployeeAudit
+(
+  Id int identity(1,1) primary key,
+  AuditData nvarchar(1000)
+);
+

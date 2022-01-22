@@ -1,30 +1,5 @@
 --TRIGGERS IN SQL SERVER 
 
---creatind table tblEmployee
-CREATE TABLE tblEmployee
-(
-  Id int Primary Key,
-  Name nvarchar(30),
-  Salary int,
-  Gender nvarchar(10),
-  DepartmentId int
-);
-
--- inserting into tblEmployee
-Insert into tblEmployee values (1,'John', 5000, 'Male', 3),
-                               (2,'Mike', 3400, 'Male', 2),
-							   (3,'tina', 6000, 'Female', 1),
-							   (4,'ram', 7000, 'Male', 4),
-							   (5,'sid', 8000, 'Male', 1),
-							   (6,'sam', 9000, 'Male', 3);
-
--- creating tblEmployeeAudit table
-CREATE TABLE tblEmployeeAudit
-(
-  Id int identity(1,1) primary key,
-  AuditData nvarchar(1000)
-);
-
 --creating insert trigger
 CREATE TRIGGER tr_tblEMployee_ForInsert
 ON tblEmployee

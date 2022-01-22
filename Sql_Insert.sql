@@ -60,3 +60,11 @@ values ('5', 'frontend developer', 'yes', 'done', 'done' , 'creatorstamp6', 'cre
        ('6', 'Backend developer', 'yes', 'done', 'done' , 'creatorstamp7', 'creatoruser7'),
 	   ('7', 'fullstack developer', 'yes', 'done', 'done' , 'creatorstamp8', 'creatoruser8'),
 	   ('8', 'frontend developer', 'yes', 'done', 'done' , 'creatorstamp9', 'creatoruser9');
+
+	   -- inserting into tblEmployee
+Insert into tblEmployee values (1,'John', 5000, 'Male', 3),
+                               (2,'Mike', 3400, 'Male', 2),
+							   (3,'tina', 6000, 'Female', 1),
+							   (4,'ram', 7000, 'Male', 4),
+							   (5,'sid', 8000, 'Male', 1),
+							   (6,'sam', 9000, 'Male', 3);
