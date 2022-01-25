@@ -311,3 +311,25 @@ CREATE TABLE tblEmployeeAudit
   AuditData nvarchar(1000)
 );
 
+
+-- create table for mail addresss
+Create Table tblMailingAddress
+(
+   AddressId int NOT NULL primary key,
+   EmployeeNumber int,
+   HouseNumber nvarchar(50),
+   StreetAddress nvarchar(50),
+   City nvarchar(10),
+   PostalCode nvarchar(50)
+)
+
+-- create table for physical address
+Create Table tblPhysicalAddress
+(
+ AddressId int NOT NULL primary key,
+ EmployeeNumber int,
+ HouseNumber nvarchar(50),
+ StreetAddress nvarchar(50),
+ City nvarchar(10),
+ PostalCode nvarchar(50)
+)

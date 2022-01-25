@@ -35,3 +35,16 @@ END;
 
 --delete query
 Delete from tblEmployee where Id = 7;
+
+
+Create trigger tr_tblEmployee_ForUpdate
+on tblEmployee
+for Update
+as
+Begin
+ Select * from deleted
+ Select * from inserted 
+End
+
+Update tblEmployee set Name = 'Tods', Salary = 2000, 
+Gender = 'Female' where Id = 4
